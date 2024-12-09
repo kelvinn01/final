@@ -1,0 +1,68 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 0 10px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .hamburger-menu {
+      display: block;
+      background-color: transparent;
+      border: none;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+  
+    .nav-list.active {
+      display: flex;
+    }
+  }
